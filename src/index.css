@@ -1,0 +1,84 @@
+* {
+  font-family: cursive;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.counter-container {
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  background-color: #bfd7ed;
+  border: 2px solid rgb(94, 92, 92);
+  border-radius: 0.5rem;
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+}
+
+.counter-display {
+  font-size: 100px;
+  color: black;
+  margin: 5px;
+  padding: 50px;
+}
+
+.count-inc {
+  font-size: 20px;
+  background-color: #003b73;
+  color: #bfd7ed;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.count-res {
+  font-size: 20px;
+  background-color: rgb(255, 69, 69);
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 300px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .counter-container {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .counter-display {
+      font-size: 70px; /* Reduce font size */
+      padding: 20px;
+  }
+
+  .count-inc, .count-res {
+      width: 100%; /* Buttons take full width */
+      font-size: 18px; /* Reduce button text size */
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-container {
+      padding: 10px;
+  }
+
+  .counter-display {
+      font-size: 50px; /* Further reduce font size */
+      padding: 10px;
+  }
+
+  .count-inc, .count-res {
+      width: 100%; /* Buttons remain full width */
+      font-size: 16px; /* Reduce button text size further */
+      padding: 6px;
+  }
+}
